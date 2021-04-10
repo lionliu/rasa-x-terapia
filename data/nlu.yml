@@ -1,0 +1,203 @@
+version: "2.0"
+nlu:
+- intent: sad
+  examples: |
+    - Estou triste
+    - Eu não me sinto muito bem
+    - estou desapontado
+    - meu dia foi horrível
+    - Isto é ruim
+    - Me sinto meio mal
+    - estou doente
+    - Estou me sentindo pra baixo hoje
+    - É decepcionante
+    - Como é irritante
+    - Estou irritado
+    - eu não estou me sentindo bem
+    - Isso é péssimo!
+    - estou me sentindo muito mal
+    - Pior dia de todos!
+    - Isso é ruim
+    - Eu me sinto pra baixo
+    - Tudo está ruim hoje
+    - Eu me sinto muito triste
+    - Me sinto horrível
+    - Isso é deprimente
+    - estou deprimido
+    - eu me sinto entediado
+    - Estou me sentindo entediado
+    - vida é chata
+    - Estou me sentindo vazia
+    - me sinto inútil
+    - horrível
+    - depressivo
+    - pesado
+    - Estou me sentindo completamente perdida
+    - muito triste
+    - infeliz
+    - ruim
+    - muito mal
+    - Terrível
+    - não muito bom
+    - extremamente triste
+    - tão triste
+    - Estou me sentindo triste
+    - Eu não estou bem
+    - Não é bom
+    - Eu sou terrível
+    - Estou me sentindo muito triste
+    - Estou inquieto
+    - Na verdade eu não estou bem
+    - Eu estou tão solitário quanto possível
+    - Estou passando por um momento bastante complicado
+    - Eu estou de luto
+    - Eu estou extremamente triste
+    - estou triste
+- intent: happiness
+  examples: |
+    - Eu estou feliz
+    - Eu me sinto ótimo
+    - Estou bem
+    - Eu tive um ótimo dia
+    - estou muito surpreso
+    - Você é muito legal
+    - estou adorando isso
+    - Estou começando a gostar desta
+    - Estou me sentindo ótimo
+    - Indo bem
+    - nunca estive melhor
+    - Me sinto sortudo
+    - Tudo ótimo aqui
+    - Dia fantástico
+    - Que grande dia
+    - Eu estou inspirado
+    - É perfeito
+    - incrível
+    - Me sinto maravilhoso
+    - Estou me sentindo muito bem
+    - Estou estou ótimo
+    - Estou me sentindo incrível
+    - Estou me sentindo feliz
+    - Hoje é um dia incrível!
+    - Estou tão feliz
+    - Estou muito feliz agora
+- intent: angry
+  examples: |
+    - Eu estou com raiva
+    - Estou me sentindo tão irritado
+    - Estou tão irritado
+    - É desagradável
+    - Isso é irritante
+    - Estou furioso
+    - Eu estou muito bravo
+    - Tudo me irrita
+    - Estou indignado
+    - Isso é enlouquecedor!
+    - Eu estou de mal humor
+    - Estou muito frustrado
+    - Está me irritando
+    - Eu me sinto tão ofendido
+    - Estou cheio de raiva
+    - Me sinto muito agressivo
+    - Eu odeio fazer isso
+    - Estou sem paciência hoje
+    - Eu não conseguia controlar minha raiva
+    - Estou chateado
+    - Estou super irritado
+    - Estou tão bravo
+    - Eu estou puto
+    - Pode apostar que eu estou com raiva
+    - Isso me deixou com raiva
+    - Você me deixou com raiva
+    - Eu ainda estou com raiva sobre isso
+    - que saco!
+    - aquele professor careca é muito chato
+- intent: fear
+  examples: |
+    - estou assustado
+    - Eu me sinto com medo
+    - estou preocupado
+    - Estou aterrorizado
+    - Isso é assustador
+    - I se sentem intimidados
+    - Isso é intimidante
+    - Estou petrificado
+    - eu estou com medo
+    - Sinto-me ansioso
+    - Eu estou tendo um mau pressentimento
+    - Eu estou com medo
+    - Eu entrei em panico
+    - Encolhi-me no medo
+    - Eu estou morrendo de medo
+    - Eu quebrei para fora em um suor frio
+    - Isso me assustou!
+    - Eu estou assustado com facilidade
+    - Estou tremendo de medo
+    - Estou horrorizado
+- intent: anxious
+  examples: |
+    - estou nervoso
+    - eu estou estressado
+    - eu estou nervoso
+    - Estou ansioso
+    - Sinto-me ansioso
+    - Esta é nerveracking
+    - Esta é nervewracking
+    - Esta é dar cabo dos nervos
+    - Esta é nervo que arruina
+    - Eu sinto que vou vomitar
+    - Eu tenho um nó na garganta
+    - Eu tenho borboletas no estômago
+    - Eu sou um feixe de nervos
+    - Eu estou quebrando para fora em um suor frio
+    - Tenho medo da minha própria sombra
+    - Eu sou como um gato em tijolos quentes
+    - Eu estou pulando fora da minha pele
+    - Estou no final meu juízo
+    - Eu estou língua amarrada
+    - Estou no limite
+    - Estou muito tensa
+    - Eu me sinto desconfortável
+    - Estou alarmado
+    - Estou sendo perturbado
+    - Estou tenso
+    - Estou sob um monte de estresse
+    - Estou constantemente preocupado
+    - Sinto tensão constante
+    - Estou ansioso.
+    - Eu estou sofrendo de ansiedade.
+    - Estou me sentindo um pouco ansiosa recentemente.
+    - Minha ansiedade é bastante através do telhado nos dias de hoje.
+    - Eu estou sentindo um pouco inquieto
+    - Não consigo me concentrar como eu estou preocupado constantemente
+    - Estou sob estresse imenso
+    - Tem sido um par áspero de dias. Muito estressante
+    - Estou bastante tenso.
+    - Tem havido algumas mudanças em minha vida. Eu não acho que eu estou lidando bem. É muito estressante.
+    - Encontro-me se preocupar com cada pequeno detalhe
+    - Eu sou uma pessoa preocupada crônica.
+    - Eu estou sentindo um pouco inquieto e uma horda de preocupações está me incomodando
+    - Não consigo me concentrar, devido a toda a série de preocupações que estão me incomodando
+- intent: questioning
+  examples: |
+    - Como você pode me ajudar?
+    - Preciso de ajuda
+    - me ajuda
+    - Tenho algumas dúvidas
+    - Tenho algumas perguntas
+- intent: greet
+  examples: |
+    - Olá
+    - Muito obrigado
+    - Valeu
+    - Muito agradecido
+    - Ajudou muito
+    - oi
+    - hey
+- intent: thankful
+  examples: |
+    - Obrigado
+    - Muito obrigado
+    - Valeu
+    - Muito agradecido
+    - Ajudou muito

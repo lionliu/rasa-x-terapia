@@ -1,0 +1,77 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- greet:
+    use_entities: true
+- thankful:
+    use_entities: true
+- happiness:
+    use_entities: true
+- angry:
+    use_entities: true
+- fear:
+    use_entities: true
+- anxious:
+    use_entities: true
+- questioning:
+    use_entities: true
+- sad:
+    use_entities: true
+entities: []
+slots: {}
+responses:
+  utter_greet:
+  - text: Oi! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, eu vou te ajudar a lutar contra a procrastinação.
+  - text: Olá! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, e estou aqui para te ajudar.
+  - text: Oi! Sou Braino, e estou aqui para te ajudar.
+  utter_goodbye:
+  - text: Foi muito bom conversar com você!
+  - text: Nos vemos em breve!
+  - text: Até mais *nome*!
+  - text: Sempre bom conversar com você, até breve!
+  utter_anxiety_question:
+  - text: Você poderia descrever um pouco mais do seu sentimento agora (ou no momento em que essa situação ocorreu)?
+  - text: Com qual frequência esse sentimento ocorre?
+  - text: Como esse sintoma afetou o que você estava tentando fazer?
+  - text: Com quem você estava nesse momento?
+  - text: O que você estava fazendo?
+  utter_anxiety_response:
+  - text: Você vai conseguir ajeitar tudo.
+  - text: Entendo esse sentimento, eu já passei por isso, vou te ajudar.
+  - text: Entendo sua angústia, vamos resolver isso juntos.
+  utter_sadness_question:
+  - text: Eu entendo que pode ser difícil, posso te ajudar com esse sentimento?
+  utter_sadness_response:
+  - text: Vai dar tudo certo, isso faz parte.
+  - text: Entendo sua tristeza, vamos resolver isso juntos.
+  utter_anger_question:
+  - text: Por que você está se sentindo assim? Raiva só te faz mal, relaxa um pouco!
+  utter_anger_response:
+  - text: Vai dar tudo certo. Não precisa ficar bravo
+  - text: Entendo sua raiva, vamos resolver isso juntos.
+  utter_fear_question:
+  - text: O que te amedronta? fala para mim!
+  - text: Com o que você está assustada?
+  - text: Com o que você está assustado?
+  utter_fear_response:
+  - text: Vai dar tudo certo. Não precisa ficar com medo
+  - text: Entendo seu medo, vamos resolver isso juntos.
+  utter_happiness_question:
+  - text: Como é estar se sentindo tão feliz?
+  - text: O que você sente com essa felicidade?
+  utter_happiness_response:
+  - text: Que bom que você está conseguindo ver as coisas assim.
+  - text: Que bom que você está se sentindo assim.
+  utter_questioning_question:
+  - text: Você poderia ser mais específico? O que te aflige
+  utter_thankful:
+  - text: Obrigado por confiar em mim.
+  - text: Obrigado por dividir seu tempo comigo.
+  - text: Obrigado pela conversa.
+actions: []
+forms: {}
+e2e_actions: []
