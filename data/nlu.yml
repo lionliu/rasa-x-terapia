@@ -194,6 +194,7 @@ nlu:
     - Ajudou muito
     - oi
     - hey
+    - Bom dia!
 - intent: thankful
   examples: |
     - Obrigado
