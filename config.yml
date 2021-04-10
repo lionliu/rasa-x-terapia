@@ -4,6 +4,7 @@ language: pt
 
 pipeline:
   - name: SpacyNLP
+    model: pt_core_news_md
   - name: SpacyTokenizer
   - name: SpacyFeaturizer
   - name: RegexFeaturizer
