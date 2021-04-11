@@ -198,6 +198,7 @@ nlu:
     - oi
     - hey
     - Bom dia!
+    - ola
 - intent: thankful
   examples: |
     - Obrigado
@@ -229,3 +230,6 @@ nlu:
     - drogas
     - bêbado
     - bebendo
+- intent: EXTERNAL_task_completed
+  examples: |
+    - {task}
