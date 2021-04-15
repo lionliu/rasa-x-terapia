@@ -6,3 +6,9 @@ rules:
   steps:
   - intent: thankful
   - action: utter_thankful
+
+- rule: ideacao suicida
+  steps:
+  - intent: suicide
+  - action: utter_suicide
+

@@ -21,6 +21,8 @@ intents:
     use_entities: true
 - sad:
     use_entities: true
+- suicide:
+    use_entities: true
 entities: []
 slots: {}
 responses:
@@ -72,6 +74,8 @@ responses:
   - text: Obrigado por confiar em mim.
   - text: Obrigado por dividir seu tempo comigo.
   - text: Obrigado pela conversa.
+  utter_suicide:
+  - text: O CVV é um centro que pode ajudar no problema que você está passando! Ligue 188 para entrar em contato com um profissional!
 actions: []
 forms: {}
 e2e_actions: []
