@@ -87,6 +87,5 @@ actions:
   utter_suicide:
   - text: O CVV é um centro que pode ajudar no problema que você está passando! Ligue 188 para entrar em contato com um profissional!
   action_joke:
-actions: []
 forms: {}
 e2e_actions: []
