@@ -157,3 +157,10 @@ stories:
 ##  steps: 
 ##  - intent: questioning
 ##  - action: utter_questioning_question
+
+# Telegram
+- story: telegram
+  steps:
+    - intent: telegram_test
+    - action: utter_feeling
+    - action: action_joke

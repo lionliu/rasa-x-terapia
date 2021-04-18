@@ -1,5 +1,8 @@
 version: "2.0"
 nlu:
+- intent: telegram_test
+  examples: |
+    - teste telegram
 - intent: sad
   examples: |
     - Estou triste
