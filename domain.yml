@@ -31,10 +31,17 @@ intents:
     use_entities: false
 - telegram_test:
     use_entities: false
+- EXTERNAL_task_completed:
+    use_entities: true
 entities:
 - account
 slots:
   account:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  task:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     auto_fill: true
@@ -103,8 +110,8 @@ responses:
   - text: Okay, então você pode entrar nesse link https://site.com.br e me informar o código obtido?
   utter_entity2:
   - text: Obrigado! salvei seu código {account}
-actions:
-- action_joke
-- action_joke2
+  utter_warn_task_completed:
+  - text: Sua task "{task}" foi finalizada! Parabéns! Como você se sentiu enquanto fazia essa task?
+actions: [action_joke, action_joke2]
 forms: {}
 e2e_actions: []
