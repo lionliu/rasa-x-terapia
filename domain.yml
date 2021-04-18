@@ -35,8 +35,8 @@ responses:
     button_type: vertical
     text: Como você está?
     image: "https://i.imgur.com/nGF1K8f.jpg"
-    custom:
-      - action: action_joke2
+    # custom:
+    #   - action: action_joke2
   utter_greet:
   - text: Oi! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, eu vou te ajudar a lutar contra a procrastinação.
   - text: Olá! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, e estou aqui para te ajudar.
