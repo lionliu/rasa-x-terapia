@@ -83,9 +83,8 @@ responses:
   - text: Obrigado por confiar em mim.
   - text: Obrigado por dividir seu tempo comigo.
   - text: Obrigado pela conversa.
-actions: 
   utter_suicide:
   - text: O CVV é um centro que pode ajudar no problema que você está passando! Ligue 188 para entrar em contato com um profissional!
-  action_joke:
+actions: [action_joke]
 forms: {}
 e2e_actions: []
