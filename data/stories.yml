@@ -3,6 +3,15 @@ version: "2.0"
 stories:
 ##ANGER
 
+- story: todoist
+  steps: 
+  - intent: entity_test1
+  - action: utter_entity
+  - intent: entity_test2
+    entities:
+    - account: "a87Kbl09Njai83K"
+  - action: utter_entity2
+
 - story: angry1
   steps: 
   - intent: greet

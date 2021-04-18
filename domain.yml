@@ -2,41 +2,53 @@ version: '2.0'
 config:
   store_entities_as_slots: true
 session_config:
-  session_expiration_time: 60
+  session_expiration_time: 600
   carry_over_slots_to_new_session: true
 intents:
 - greet:
-    use_entities: true
+    use_entities: false
 - thankful:
-    use_entities: true
+    use_entities: false
 - happiness:
-    use_entities: true
+    use_entities: false
 - angry:
-    use_entities: true
+    use_entities: false
 - fear:
-    use_entities: true
+    use_entities: false
 - anxious:
-    use_entities: true
+    use_entities: false
 - questioning:
-    use_entities: true
+    use_entities: false
 - sad:
-    use_entities: true
+    use_entities: false
 - suicide:
+    use_entities: false
+- entity_test2:
     use_entities: true
-entities: []
-slots: {}
+- entity_test1:
+    use_entities: false
+- inform:
+    use_entities: false
+- telegram_test:
+    use_entities: false
+entities:
+- account
+slots:
+  account:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
 responses:
   utter_feeling:
-  - buttons:
+  - button_type: vertical
+    buttons:
     - payload: Eu estou feliz
       title: Bem
     - payload: Estou triste
       title: Mal
-    button_type: vertical
+    image: https://i.imgur.com/nGF1K8f.jpg
     text: Como você está?
-    image: "https://i.imgur.com/nGF1K8f.jpg"
-    # custom:
-    #   - action: action_joke2
   utter_greet:
   - text: Oi! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, eu vou te ajudar a lutar contra a procrastinação.
   - text: Olá! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, e estou aqui para te ajudar.
@@ -87,6 +99,12 @@ responses:
   - text: Obrigado pela conversa.
   utter_suicide:
   - text: O CVV é um centro que pode ajudar no problema que você está passando! Ligue 188 para entrar em contato com um profissional!
-actions: [action_joke, action_joke2]
+  utter_entity:
+  - text: Okay, então você pode entrar nesse link https://site.com.br e me informar o código obtido?
+  utter_entity2:
+  - text: Obrigado! salvei seu código {account}
+actions:
+- action_joke
+- action_joke2
 forms: {}
 e2e_actions: []
