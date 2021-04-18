@@ -163,4 +163,5 @@ stories:
   steps:
     - intent: telegram_test
     - action: utter_feeling
+    - intent: sad
     - action: action_joke

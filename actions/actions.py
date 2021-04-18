@@ -40,3 +40,16 @@ class ActionJoke(Action):
         joke = request['value']['joke']  # extract a joke
         dispatcher.utter_message(text=joke)  # send the message back
         return []
+
+
+class ActionJoke2(Action):
+    def name(self):
+        return "action_joke2"
+
+    def run(self, dispatcher, tracker, domain):
+        request = requests.get(
+            'http://api.icndb.com/jokes/random'
+        ).json()  # make an api call
+        joke = request['value']['joke']  # extract a joke
+        dispatcher.utter_message(text=joke)  # send the message back
+        return []
