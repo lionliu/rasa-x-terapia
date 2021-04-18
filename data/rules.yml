@@ -1,7 +1,5 @@
 version: "2.0"
-
 rules:
-
 - rule: Say goodbye anytime the user says goodbye
   steps:
   - intent: thankful
@@ -12,3 +10,7 @@ rules:
   - intent: suicide
   - action: utter_suicide
 
+- rule: warn about task completed
+  steps:
+  - intent: EXTERNAL_task_completed
+  - action: utter_warn_task_completed

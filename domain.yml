@@ -23,8 +23,15 @@ intents:
     use_entities: true
 - suicide:
     use_entities: true
+- EXTERNAL_task_completed:
+    use_entities: true
 entities: []
-slots: {}
+slots: 
+  task:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
 responses:
   utter_feeling:
   - buttons:
@@ -87,6 +94,8 @@ responses:
   - text: Obrigado pela conversa.
   utter_suicide:
   - text: O CVV é um centro que pode ajudar no problema que você está passando! Ligue 188 para entrar em contato com um profissional!
+  utter_warn_task_completed:
+  - text: Sua task "{task}" foi finalizada! Parabéns! Como você se sentiu enquanto fazia essa task?
 actions: [action_joke, action_joke2]
 forms: {}
 e2e_actions: []

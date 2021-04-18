@@ -1,141 +1,97 @@
 version: "2.0"
-
 stories:
-##ANGER
-
 - story: angry1
-  steps: 
+  steps:
   - intent: greet
   - action: utter_greet
   - intent: angry
   - action: utter_anger_question
-
 - story: angry2
-  steps: 
+  steps:
   - intent: greet
   - action: utter_greet
   - intent: angry
   - action: utter_anger_response
-
 - story: angry3
-  steps: 
+  steps:
   - intent: angry
   - action: utter_anger_response
-
 - story: angry4
-  steps: 
+  steps:
   - intent: angry
   - action: utter_anger_question
-
-##SADNESS
-
 - story: sad1
-  steps: 
+  steps:
   - intent: greet
   - action: utter_greet
   - intent: sad
   - action: utter_sadness_question
-
-
 - story: sad2
-  steps: 
+  steps:
   - intent: greet
   - action: utter_greet
   - intent: sad
   - action: utter_sadness_response
-
 - story: sad3
-  steps: 
+  steps:
   - intent: sad
   - action: utter_sadness_response
-
 - story: sad4
-  steps: 
+  steps:
   - intent: sad
   - action: utter_sadness_question
-
-##ANXIETY
-
 - story: anxious1
-  steps: 
+  steps:
   - intent: greet
   - action: utter_greet
   - intent: anxious
   - action: utter_anxiety_question
-
 - story: anxious2
-  steps: 
+  steps:
   - intent: greet
   - action: utter_greet
   - intent: anxious
   - action: utter_anxiety_response
-
 - story: anxious3
-  steps: 
+  steps:
   - intent: anxious
   - action: utter_anxiety_response
-
 - story: anxious4
-  steps: 
+  steps:
   - intent: anxious
   - action: utter_anxiety_question
-
-##FEAR
 - story: fear1
-  steps: 
+  steps:
   - intent: greet
   - action: utter_greet
   - intent: fear
   - action: utter_fear_question
-
 - story: fear2
-  steps: 
+  steps:
   - intent: greet
   - action: utter_greet
   - intent: fear
   - action: utter_fear_response
-
 - story: fear3
-  steps: 
+  steps:
   - intent: fear
   - action: utter_fear_response
-
 - story: fear4
-  steps: 
+  steps:
   - intent: fear
   - action: utter_fear_question
-
-##HAPPINESS
-
-- story: happiness1
-  steps: 
-  - intent: greet
-  - action: utter_greet
-  - intent: happiness
-  - action: utter_happiness_question
-
 - story: happiness2
-  steps: 
+  steps:
   - intent: greet
   - action: utter_greet
   - intent: happiness
   - action: utter_happiness_response
-
 - story: hapiness3
-  steps: 
+  steps:
   - intent: happiness
   - action: utter_happiness_response
-
-- story: hapiness4
-  steps: 
-  - intent: happiness
-  - action: utter_happiness_question
-
-
-##Questioning
-
 - story: questioning1
-  steps: 
+  steps:
   - intent: greet
   - action: utter_greet
   - intent: questioning
