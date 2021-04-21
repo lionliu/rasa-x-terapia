@@ -112,6 +112,9 @@ responses:
   - text: Obrigado! salvei seu código {account}
   utter_warn_task_completed:
   - text: Sua task "{task}" foi finalizada! Parabéns! Como você se sentiu enquanto fazia essa task?
-actions: [action_joke, action_joke2, action_session_start]
+actions: 
+  - action_joke
+  - action_joke2
+  - action_session_start
 forms: {}
 e2e_actions: []
