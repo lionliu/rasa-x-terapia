@@ -116,5 +116,6 @@ actions:
   - action_joke
   - action_joke2
   - action_session_start
+  - action_sync_todoist
 forms: {}
 e2e_actions: []
