@@ -6,32 +6,34 @@ session_config:
   carry_over_slots_to_new_session: true
 intents:
 - greet:
-    use_entities: false
+    use_entities: []
 - thankful:
-    use_entities: false
+    use_entities: []
 - happiness:
-    use_entities: false
+    use_entities: []
 - angry:
-    use_entities: false
+    use_entities: []
 - fear:
-    use_entities: false
+    use_entities: []
 - anxious:
-    use_entities: false
+    use_entities: []
 - questioning:
-    use_entities: false
+    use_entities: []
 - sad:
-    use_entities: false
+    use_entities: []
 - suicide:
-    use_entities: false
+    use_entities: []
 - entity_test2:
     use_entities: true
 - entity_test1:
-    use_entities: false
+    use_entities: []
 - inform:
-    use_entities: false
+    use_entities: []
 - telegram_test:
-    use_entities: false
+    use_entities: []
 - EXTERNAL_task_completed:
+    use_entities: true
+- sync_todoist:
     use_entities: true
 entities:
 - account
@@ -112,10 +114,10 @@ responses:
   - text: Obrigado! salvei seu código {account}
   utter_warn_task_completed:
   - text: Sua task "{task}" foi finalizada! Parabéns! Como você se sentiu enquanto fazia essa task?
-actions: 
-  - action_joke
-  - action_joke2
-  - action_session_start
-  - action_sync_todoist
+actions:
+- action_joke
+- action_joke2
+- action_session_start
+- action_sync_todoist
 forms: {}
 e2e_actions: []

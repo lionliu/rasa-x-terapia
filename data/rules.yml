@@ -4,13 +4,15 @@ rules:
   steps:
   - intent: thankful
   - action: utter_thankful
-
 - rule: ideacao suicida
   steps:
   - intent: suicide
   - action: utter_suicide
-
 - rule: warn about task completed
   steps:
   - intent: EXTERNAL_task_completed
   - action: utter_warn_task_completed
+- rule: Sync Todoist
+  steps:
+  - intent: sync_todoist
+  - action: action_sync_todoist
