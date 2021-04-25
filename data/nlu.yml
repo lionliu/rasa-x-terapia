@@ -1,8 +1,5 @@
 version: "2.0"
 nlu:
-- regex: account
-  examples: |
-    - ([^\s]+)
 - intent: entity_test2
   examples: |
     - minha conta é [a87Kbl09Njai83K](account)
