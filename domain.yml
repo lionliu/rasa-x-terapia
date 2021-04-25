@@ -35,6 +35,8 @@ intents:
     use_entities: true
 - sync_todoist:
     use_entities: true
+- EXTERNAL_auth_completed:
+    use_entities: true
 entities:
 - account
 slots:
@@ -114,6 +116,8 @@ responses:
   - text: Obrigado! salvei seu código {account}
   utter_warn_task_completed:
   - text: Sua task "{task}" foi finalizada! Parabéns! Como você se sentiu enquanto fazia essa task?
+  utter_warn_auth_completed:
+  - text: Pronto! Já recebi sua autorização, de agora em diante posso te ajudar de acordo com o seu progresso!
 actions:
 - action_joke
 - action_joke2
