@@ -35,6 +35,8 @@ intents:
     use_entities: true
 - sync_todoist:
     use_entities: true
+- help_terapia:
+    use_entities: true
 - EXTERNAL_auth_completed:
     use_entities: true
 entities:
@@ -61,9 +63,13 @@ responses:
     image: https://i.imgur.com/nGF1K8f.jpg
     text: Como você está?
   utter_greet:
-  - text: Oi! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, eu vou te ajudar a lutar contra a procrastinação.
-  - text: Olá! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, e estou aqui para te ajudar.
-  - text: Oi! Sou Braino, e estou aqui para te ajudar.
+  - text: |-
+      Oi! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, eu vou te ajudar a lutar contra a procrastinação.
+      Para descobrir o como posso te ajudar, só digitar /help_terapia
+  - text: |-
+      Olá! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, e estou aqui para te ajudar.
+      Para descobrir o como posso te ajudar, só digitar /help_terapia
+  - text: Oi! Sou Braino, e estou aqui para te ajudar. Para descobrir o como posso te ajudar, só digitar /help_terapia
   utter_goodbye:
   - text: Foi muito bom conversar com você!
   - text: Nos vemos em breve!
@@ -118,6 +124,10 @@ responses:
   - text: Sua task "{task}" foi finalizada! Parabéns! Como você se sentiu enquanto fazia essa task?
   utter_warn_auth_completed:
   - text: Pronto! Já recebi sua autorização, de agora em diante posso te ajudar de acordo com o seu progresso!
+  utter_help_terapia:
+  - text: |-
+      Posso conversar com você a qualquer momento!
+      Se quiser sincronizar a sua conta do Todoist digite /sync_todoist a qualquer momento durante nossa conversa!
 actions:
 - action_joke
 - action_joke2
