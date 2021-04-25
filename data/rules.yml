@@ -16,3 +16,7 @@ rules:
   steps:
   - intent: sync_todoist
   - action: action_sync_todoist
+- rule: warn about task completed
+  steps:
+  - intent: EXTERNAL_auth_completed
+  - action: utter_warn_auth_completed
