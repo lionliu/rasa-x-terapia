@@ -223,7 +223,6 @@ nlu:
   examples: |
     - pensamentos suicidas
     - cometer suicídio
-    - enforcar
 - intent: EXTERNAL_task_completed
   examples: |
     - {task}

@@ -26,5 +26,5 @@ rules:
   - action: utter_help_terapia
 - rule: Greet New User
   steps:
-  - intent: sync_todoist
+  - intent: start
   - action: action_session_start
