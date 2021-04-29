@@ -131,7 +131,6 @@ responses:
       Se quiser sincronizar a sua conta do Todoist digite /sync_todoist a qualquer momento durante nossa conversa!
 actions:
 - action_joke
-- action_joke2
 - action_session_start
 - action_sync_todoist
 forms: {}

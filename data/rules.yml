@@ -24,3 +24,7 @@ rules:
   steps:
   - intent: help_terapia
   - action: utter_help_terapia
+- rule: Greet New User
+  steps:
+  - intent: sync_todoist
+  - action: action_session_start

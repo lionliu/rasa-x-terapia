@@ -221,28 +221,9 @@ nlu:
     - Ajudou muito
 - intent: suicide
   examples: |
-    - deprimido
     - pensamentos suicidas
-    - overdose
-    - abusivo
-    - suicida
-    - depressão
-    - corte
-    - faca
-    - pulso
-    - cicatrizes
     - cometer suicídio
-    - suicídio
-    - estupro
-    - antidepressivos
-    - enforcamento
     - enforcar
-    - corda
-    - pescoço
-    - louco
-    - drogas
-    - bêbado
-    - bebendo
 - intent: EXTERNAL_task_completed
   examples: |
     - {task}
