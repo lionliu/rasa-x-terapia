@@ -1,18 +1,5 @@
 version: "2.0"
 nlu:
-- intent: entity_test2
-  examples: |
-    - minha conta é [a87Kbl09Njai83K](account)
-    - meu todoist é [a87Kbl09Njai83K](account)
-    - o código é [a87Kbl09Njai83K](account)
-- intent: entity_test1
-  examples: |
-    - quero conectar com todoist
-    - integrar com todoist
-    - integração
-    - quero integrar com todoist
-    - conecção com todoist
-    - conectar com todoist
 - intent: telegram_test
   examples: |
     - teste telegram
