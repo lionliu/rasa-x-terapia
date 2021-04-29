@@ -212,6 +212,9 @@ nlu:
     - hey
     - Bom dia!
     - ola
+    - Teste
+    - Você é um humano?
+    - Você é um robo?
 - intent: thankful
   examples: |
     - Obrigado
