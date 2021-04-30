@@ -50,39 +50,39 @@ stories:
   - slot_was_set:
     - requested_slot: answer_three
   - slot_was_set:
-    - answer_two: blibli
+    - answer_three: blibli
   - slot_was_set:
     - requested_slot: answer_four
   - slot_was_set:
-    - answer_two: bloblo
+    - answer_four: bloblo
   - slot_was_set:
     - requested_slot: answer_five
   - slot_was_set:
-    - answer_two: blublu
+    - answer_five: blublu
   - slot_was_set:
     - requested_slot: answer_six
   - slot_was_set:
-    - answer_two: lalala
+    - answer_six: lalala
   - slot_was_set:
     - requested_slot: answer_seven
   - slot_was_set:
-    - answer_two: lelele
+    - answer_seven: lelele
   - slot_was_set:
     - requested_slot: answer_eight
   - slot_was_set:
-    - answer_two: lilili
+    - answer_eight: lilili
   - slot_was_set:
     - requested_slot: answer_nine
   - slot_was_set:
-    - answer_two: lololo
+    - answer_nine: lololo
   - slot_was_set:
     - requested_slot: answer_ten
   - slot_was_set:
-    - answer_two: lululu
+    - answer_ten: lululu
   - slot_was_set:
     - requested_slot: answer_eleven
   - slot_was_set:
-    - answer_two: acabou
+    - answer_eleven: acabou
   - slot_was_set:
     - requested_slot: null
   - active_loop: null
