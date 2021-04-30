@@ -25,12 +25,6 @@ intents:
     use_entities: []
 - suicide:
     use_entities: []
-- entity_test2:
-    use_entities: true
-- entity_test1:
-    use_entities: []
-- inform:
-    use_entities: []
 - telegram_test:
     use_entities: []
 - EXTERNAL_task_completed:
