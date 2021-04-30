@@ -28,3 +28,7 @@ rules:
   steps:
   - intent: start
   - action: action_session_start
+- rule: Greet
+  steps:
+  - intent: greet
+  - action: utter_greet

@@ -1,12 +1,8 @@
-version: '2.0'
-config:
-  store_entities_as_slots: true
 session_config:
   session_expiration_time: 600
   carry_over_slots_to_new_session: true
 intents:
-- todoist:
-    use_entities: true
+- todoist
 - greet:
     use_entities: []
 - thankful:
@@ -27,30 +23,28 @@ intents:
     use_entities: []
 - telegram_test:
     use_entities: []
-- EXTERNAL_task_completed:
-    use_entities: true
-- sync_todoist:
-    use_entities: true
-- help_terapia:
-    use_entities: true
-- EXTERNAL_auth_completed:
-    use_entities: true
-- start:
-    use_entities: true
+- EXTERNAL_task_completed
+- sync_todoist
+- help_terapia
+- EXTERNAL_auth_completed
+- start
 entities:
-- account
 - task
 slots:
-  account:
-    type: rasa.shared.core.slots.TextSlot
-    initial_value: null
-    auto_fill: true
-    influence_conversation: false
   task:
+    type: text
+    influence_conversation: false
+  answer_one:
     type: rasa.shared.core.slots.TextSlot
     initial_value: null
     auto_fill: true
-    influence_conversation: false
+    influence_conversation: true
+  answer_two:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+    
 responses:
   utter_feeling:
   - button_type: vertical
@@ -62,20 +56,21 @@ responses:
     image: https://i.imgur.com/nGF1K8f.jpg
     text: Como você está?
   utter_greet:
-  - text: |-
-      Oi! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, eu vou te ajudar a lutar contra a procrastinação.
-      Para descobrir o como posso te ajudar, só digitar /help_terapia
-  - text: |-
-      Olá! Bem vindo ao chat-bot do PesqEasy. Meu nome é Braino, e estou aqui para te ajudar.
-      Para descobrir o como posso te ajudar, só digitar /help_terapia
-  - text: Oi! Sou Braino, e estou aqui para te ajudar. Para descobrir o como posso te ajudar, só digitar /help_terapia
+  - text: "Oi! Bem vindo ao chat-bot do Terap.ia. Meu nome é Braino, eu vou te ajudar\
+      \ a lutar contra a procrastinação.\nPara descobrir o como posso te ajudar, só\
+      \ digitar /help_terapia"
+  - text: "Olá! Bem vindo ao chat-bot do Terap.ia. Meu nome é Braino, e estou aqui\
+      \ para te ajudar.\nPara descobrir o como posso te ajudar, só digitar /help_terapia"
+  - text: Oi! Sou Braino, e estou aqui para te ajudar. Para descobrir o como posso
+      te ajudar, só digitar /help_terapia
   utter_goodbye:
   - text: Foi muito bom conversar com você!
   - text: Nos vemos em breve!
   - text: Até mais *nome*!
   - text: Sempre bom conversar com você, até breve!
   utter_anxiety_question:
-  - text: Você poderia descrever um pouco mais do seu sentimento agora (ou no momento em que essa situação ocorreu)?
+  - text: Você poderia descrever um pouco mais do seu sentimento agora (ou no momento
+      em que essa situação ocorreu)?
   - text: Com qual frequência esse sentimento ocorre?
   - text: Como esse sintoma afetou o que você estava tentando fazer?
   - text: Com quem você estava nesse momento?
@@ -114,24 +109,33 @@ responses:
   - text: Obrigado por dividir seu tempo comigo.
   - text: Obrigado pela conversa.
   utter_suicide:
-  - text: O CVV é um centro que pode ajudar no problema que você está passando! Ligue 188 para entrar em contato com um profissional!
-  utter_entity:
-  - text: Okay, então você pode entrar nesse link https://site.com.br e me informar o código obtido?
-  utter_entity2:
-  - text: Obrigado! salvei seu código {account}
+  - text: O CVV é um centro que pode ajudar no problema que você está passando! Ligue
+      188 para entrar em contato com um profissional!
   utter_warn_task_completed:
-  - text: Sua task "{task}" foi finalizada! Parabéns! Como você se sentiu enquanto fazia essa task?
+  - text: Sua task "{task}" foi finalizada! Parabéns! Como você se sentiu enquanto
+      fazia essa task?
   utter_warn_auth_completed:
-  - text: Pronto! Já recebi sua autorização, de agora em diante posso te ajudar de acordo com o seu progresso!
+  - text: Pronto! Já recebi sua autorização, de agora em diante posso te ajudar de
+      acordo com o seu progresso!
   utter_help_terapia:
-  - text: |-
-      Posso conversar com você a qualquer momento!
-      Se quiser sincronizar a sua conta do Todoist digite /sync_todoist a qualquer momento durante nossa conversa!
+  - text: "Posso conversar com você a qualquer momento!\nSe quiser sincronizar a sua\
+      \ conta do Todoist digite /sync_todoist a qualquer momento durante nossa conversa!"
   utter_todoist:
-  - text: Você pode conectar sua conta do todoist com o comando /sync_todoist. Caso já tenha sincronizado, quando você completar uma tarefa no todoist, nós vamos lhe mandar uma mensagem de como se sentiu ao completar ela.
+  - text: Você pode conectar sua conta do todoist com o comando /sync_todoist. Caso
+      já tenha sincronizado, quando você completar uma tarefa no todoist, nós vamos
+      lhe mandar uma mensagem de como se sentiu ao completar ela.
+  utter_ask_answer_one:
+  - text: Você poderia descrever um pouco mais do seu sentimento/pensamento agora?
+  utter_ask_answer_two:
+  - text: Com qual frequência esse sentimento ocorre?
 actions:
 - action_joke
 - action_session_start
 - action_sync_todoist
-forms: {}
-e2e_actions: []
+- validate_feeling_form
+forms:
+  feeling_form:
+    answer_one:
+    - type: from_text
+    answer_two:
+    - type: from_text

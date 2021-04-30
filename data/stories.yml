@@ -1,104 +1,72 @@
 version: "2.0"
 stories:
-- story: angry1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: angry
-  - action: utter_anger_question
-- story: angry2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: angry
-  - action: utter_anger_response
 - story: angry3
   steps:
   - intent: angry
   - action: utter_anger_response
-- story: angry4
-  steps:
-  - intent: angry
-  - action: utter_anger_question
-- story: sad1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: sad
-  - action: utter_sadness_question
-- story: sad2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: sad
-  - action: utter_sadness_response
+  - checkpoint: check_tcc
+
+# - story: angry4
+#   steps:
+#   - intent: angry
+#   - action: utter_anger_question
 - story: sad3
   steps:
   - intent: sad
   - action: utter_sadness_response
-- story: sad4
-  steps:
-  - intent: sad
-  - action: utter_sadness_question
-- story: anxious1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: anxious
-  - action: utter_anxiety_question
-- story: anxious2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: anxious
-  - action: utter_anxiety_response
+  - checkpoint: check_tcc
+# - story: sad4
+#   steps:
+#   - intent: sad
+#   - action: utter_sadness_question
 - story: anxious3
   steps:
   - intent: anxious
   - action: utter_anxiety_response
-- story: anxious4
-  steps:
-  - intent: anxious
-  - action: utter_anxiety_question
-- story: fear1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: fear
-  - action: utter_fear_question
-- story: fear2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: fear
-  - action: utter_fear_response
+  - checkpoint: check_tcc
+# - story: anxious4
+#   steps:
+#   - intent: anxious
+#   - action: utter_anxiety_question
 - story: fear3
   steps:
   - intent: fear
   - action: utter_fear_response
-- story: fear4
-  steps:
-  - intent: fear
-  - action: utter_fear_question
-- story: happiness2
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: happiness
-  - action: utter_happiness_response
+  - checkpoint: check_tcc
+# - story: fear4
+#   steps:
+#   - intent: fear
+#   - action: utter_fear_question
 - story: hapiness3
   steps:
   - intent: happiness
   - action: utter_happiness_response
 - story: questioning1
   steps:
-  - intent: greet
-  - action: utter_greet
   - intent: questioning
-  - action: utter_questioning_question
+  - checkpoint: check_tcc
 - story: telegram
   steps:
   - intent: telegram_test
   - action: utter_feeling
   - intent: sad
   - action: action_joke
+
+- story: interactive_story_1
+  steps:
+  - checkpoint: check_tcc
+  - action: name_form
+  - active_loop: feeling_form
+  - slot_was_set:
+    - requested_slot: answer_one
+  - slot_was_set:
+    - answer_one: blabla
+  - slot_was_set:
+    - requested_slot: answer_two
+  - slot_was_set:
+    - answer_two: lalalala
+  - slot_was_set:
+    - requested_slot: null
+  - active_loop: null
+  - action: utter_submit
+  - action: utter_slots_values
