@@ -55,6 +55,51 @@ slots:
     initial_value: null
     auto_fill: true
     influence_conversation: true
+  answer_three:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  answer_four:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  answer_five:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  answer_six:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  answer_seven:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  answer_eight:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  answer_nine:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  answer_ten:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+  answer_eleven:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
   requested_slot:
     type: rasa.shared.core.slots.UnfeaturizedSlot
     initial_value: null
@@ -138,6 +183,24 @@ responses:
   - text: Você poderia descrever um pouco mais do seu sentimento/pensamento agora?
   utter_ask_answer_two:
   - text: Com qual frequência esse sentimento ocorre?
+  utter_ask_answer_three:
+  - text: Como esse sentimento afetou o que você estava tentando fazer?
+  utter_ask_answer_four:
+  - text: Com quem você estava nesse momento?
+  utter_ask_answer_five:
+  - text: O que você estava fazendo?
+  utter_ask_answer_six:
+  - text: Diante dessas evidências que juntamos, como você julga seu pensamento agora?
+  utter_ask_answer_seven:
+  - text: O que um amigo falaria sobre o seu pensamento/sentimento que você teve naquele momento?
+  utter_ask_answer_eight:
+  - text: O que você falaria a um amigo se ele estivesse em uma situação parecida?
+  utter_ask_answer_nine:
+  - text: Existe uma outra forma de pensar sobre a situação?
+  utter_ask_answer_ten:
+  - text: Bom. Que tal se esta semana você não se deixar apenas sentir-se confuso/a pelos seus pensamentos negativos, mas em vez disso responder aos seus pensamentos ou até mesmo refocalizar e anotar seus pensamentos?
+  utter_ask_answer_eleven:
+  - text: Deixe-me mencionar outras coisas que podem ser úteis também. Você poderia tentar, como experiência, uma ou duas destas três coisas esta semana -> sair para caminhar ou correr, telefonar para um amigo, limpar sua casa, ir ao mercado.
 actions:
 - action_joke
 - action_session_start
@@ -148,5 +211,23 @@ forms:
     answer_one:
     - type: from_text
     answer_two:
+    - type: from_text
+    answer_three:
+    - type: from_text
+    answer_four:
+    - type: from_text
+    answer_five:
+    - type: from_text
+    answer_six:
+    - type: from_text
+    answer_seven:
+    - type: from_text
+    answer_eight:
+    - type: from_text
+    answer_nine:
+    - type: from_text
+    answer_ten:
+    - type: from_text
+    answer_eleven:
     - type: from_text
 e2e_actions: []
