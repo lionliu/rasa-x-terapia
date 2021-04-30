@@ -5,6 +5,8 @@ session_config:
   session_expiration_time: 600
   carry_over_slots_to_new_session: true
 intents:
+- todoist:
+    use_entities: true
 - greet:
     use_entities: []
 - thankful:
@@ -38,6 +40,8 @@ intents:
 - help_terapia:
     use_entities: true
 - EXTERNAL_auth_completed:
+    use_entities: true
+- start:
     use_entities: true
 entities:
 - account
@@ -129,6 +133,8 @@ responses:
   - text: |-
       Posso conversar com você a qualquer momento!
       Se quiser sincronizar a sua conta do Todoist digite /sync_todoist a qualquer momento durante nossa conversa!
+  utter_todoist:
+  - text: Você pode conectar sua conta do todoist com o comando /sync_todoist. Caso já tenha sincronizado, quando você completar uma tarefa no todoist, nós vamos lhe mandar uma mensagem de como se sentiu ao completar ela.
 actions:
 - action_joke
 - action_session_start
