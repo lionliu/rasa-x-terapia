@@ -12,6 +12,14 @@ rules:
   steps:
   - intent: EXTERNAL_task_completed
   - action: utter_warn_task_completed
+  - intent: happiness
+  - action: utter_task_okay
+- rule: warn about task completed
+  steps:
+  - intent: EXTERNAL_task_completed
+  - action: utter_warn_task_completed
+  - intent: sad
+  - action: utter_daijyoubu
 - rule: set reminder for a task
   steps:
   - intent: EXTERNAL_set_reminder
