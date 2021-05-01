@@ -217,6 +217,14 @@ nlu:
 - intent: EXTERNAL_task_completed
   examples: |
     - {task}
+- intent: EXTERNAL_set_reminder
+  examples: |
+    - {task}
+    - {dueDate}
+- intent: EXETERNAL_reminder
+  examples: |
+    - {task}
+    - {dueDate}
 - intent: todoist
   examples: |
     - todoist

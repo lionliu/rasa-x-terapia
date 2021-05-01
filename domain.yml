@@ -29,6 +29,10 @@ intents:
     use_entities: []
 - EXTERNAL_task_completed:
     use_entities: true
+- EXTERNAL_set_reminder:
+    use_entities: true
+- EXTERNAL_reminder:
+    use_entities: true
 - sync_todoist:
     use_entities: true
 - help_terapia:
@@ -171,6 +175,8 @@ responses:
   - text: O CVV é um centro que pode ajudar no problema que você está passando! Ligue 188 para entrar em contato com um profissional!
   utter_warn_task_completed:
   - text: Sua task "{task}" foi finalizada! Parabéns! Como você se sentiu enquanto fazia essa task?
+  utter_warn_due_task:
+  - text: Sua task "{task}" está prevista para terminar hoje. Como você está se sentindo?
   utter_warn_auth_completed:
   - text: Pronto! Já recebi sua autorização, de agora em diante posso te ajudar de acordo com o seu progresso!
   utter_help_terapia:
@@ -205,6 +211,7 @@ actions:
 - action_joke
 - action_session_start
 - action_sync_todoist
+- action_set_reminder
 - validate_feeling_form
 forms:
   feeling_form:

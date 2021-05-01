@@ -12,6 +12,14 @@ rules:
   steps:
   - intent: EXTERNAL_task_completed
   - action: utter_warn_task_completed
+- rule: set reminder for a task
+  steps:
+  - intent: EXTERNAL_set_reminder
+  - action: action_set_reminder
+- rule: send reminder of a task
+  steps:
+  - intent: EXTERNAL_reminder
+  - action: utter_warn_due_task
 - rule: Sync Todoist
   steps:
   - intent: sync_todoist
