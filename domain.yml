@@ -119,14 +119,6 @@ responses:
       title: Mal
     image: https://i.imgur.com/nGF1K8f.jpg
     text: Como você está?
-  utter_post_todoist:
-  - button_type: vertical
-    buttons:
-    - payload: /sad
-      title: Sim
-    - payload: /happiness
-      title: Não
-    text: Você gostaria de ?
   utter_greet:
   - text: |-
       Oi! Bem vindo ao chat-bot do Terap.ia. Meu nome é Braino, eu vou te ajudar a lutar contra a procrastinação.
@@ -187,7 +179,7 @@ responses:
       title: Sim
     - payload: /happiness
       title: Não
-  - text: Sua task "{task}" foi finalizada! Parabéns! Você gostaria de conversar sobre como se sentiu enquanto a realizava?
+    text: Sua task "{task}" foi finalizada! Parabéns! Você gostaria de conversar sobre como se sentiu enquanto a realizava?
   utter_warn_due_task:
   - button_type: vertical
     buttons:
@@ -195,7 +187,7 @@ responses:
       title: Sim
     - payload: /sad
       title: Não
-  - text: Sua task "{task}" está prevista para terminar hoje. Está tudo bem?
+    text: Sua task "{task}" está prevista para terminar hoje. Está tudo bem?
   utter_warn_auth_completed:
   - text: Pronto! Já recebi sua autorização, de agora em diante posso te ajudar de acordo com o seu progresso!
   utter_task_okay:
