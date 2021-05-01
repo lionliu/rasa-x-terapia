@@ -1,3 +1,3 @@
 # rasa-x-terapia
 
-wip
+Data for the rasa chatbot

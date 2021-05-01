@@ -130,7 +130,7 @@ responses:
   utter_greet:
   - text: |-
       Oi! Bem vindo ao chat-bot do Terap.ia. Meu nome é Braino, eu vou te ajudar a lutar contra a procrastinação.
-      Para descobrir o como posso te ajudar, só digitar /help_terapia 😊
+      Para descobrir o como posso te ajudar, só digitar /help_terapia
   - text: |-
       Olá! Bem vindo ao chat-bot do Terap.ia. Meu nome é Braino, e estou aqui para te ajudar.
       Para descobrir o como posso te ajudar, só digitar /help_terapia
