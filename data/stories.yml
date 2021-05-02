@@ -37,6 +37,7 @@ stories:
 - story: interactive_story_1
   steps:
   - checkpoint: check_tcc
+  - action: action_reset_slots
   - action: feeling_form
   - active_loop: feeling_form
   - slot_was_set:
