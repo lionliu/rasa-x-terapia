@@ -8,18 +8,10 @@ rules:
   steps:
   - intent: suicide
   - action: utter_suicide
-- rule: warn about task completed positive
-  steps:
-  - intent: EXTERNAL_task_completed
-  - action: utter_warn_task_completed
-  - intent: happiness
-  - action: utter_task_okay
 - rule: warn about task completed negative
   steps:
   - intent: EXTERNAL_task_completed
   - action: utter_warn_task_completed
-  - intent: sad
-  - action: utter_daijyoubu
 - rule: set reminder for a task
   steps:
   - intent: EXTERNAL_set_reminder
@@ -32,10 +24,6 @@ rules:
   steps:
   - intent: sync_todoist
   - action: action_sync_todoist
-- rule: warn about task completed
-  steps:
-  - intent: EXTERNAL_auth_completed
-  - action: utter_warn_auth_completed
 - rule: Help
   steps:
   - intent: help_terapia
