@@ -181,17 +181,17 @@ responses:
   utter_warn_task_completed:
   - button_type: vertical
     buttons:
-    - payload: /sad
+    - payload: /affirm
       title: Sim
-    - payload: /happiness
+    - payload: /deny
       title: Não
-    text: Sua task "{task}" foi finalizada! Parabéns! Você gostaria de conversar sobre como se sentiu enquanto a realizava?
+    text: Sua task "{task}" foi finalizada! Parabéns! Você gostaria de conversar sobre como se sentiu enquanto realizava a {task}?
   utter_warn_due_task:
   - button_type: vertical
     buttons:
-    - payload: /happiness
+    - payload: /deny
       title: Sim
-    - payload: /sad
+    - payload: /affirm
       title: Não
     text: Sua task "{task}" está prevista para terminar hoje. Está tudo bem?
   utter_warn_auth_completed:

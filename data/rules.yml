@@ -36,3 +36,12 @@ rules:
   steps:
   - intent: greet
   - action: utter_greet
+- rule: Affirm rule
+  steps:
+  - intent: affirm
+  - action: utter_daijyoubu
+- rule: Deny rule
+  steps:
+  - intent: deny
+  - action: utter_task_okay
+  
