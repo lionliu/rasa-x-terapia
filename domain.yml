@@ -41,6 +41,12 @@ intents:
     use_entities: true
 - start:
     use_entities: true
+- EXETERNAL_reminder:
+    use_entities: true
+- affirm:
+    use_entities: true
+- deny:
+    use_entities: true
 entities:
 - task
 slots:
@@ -230,26 +236,26 @@ actions:
 - validate_feeling_form
 forms:
   feeling_form:
-    answer_one:
+    answer_eight:
     - type: from_text
-    answer_two:
-    - type: from_text
-    answer_three:
-    - type: from_text
-    answer_four:
+    answer_eleven:
     - type: from_text
     answer_five:
     - type: from_text
-    answer_six:
-    - type: from_text
-    answer_seven:
-    - type: from_text
-    answer_eight:
+    answer_four:
     - type: from_text
     answer_nine:
     - type: from_text
+    answer_one:
+    - type: from_text
+    answer_seven:
+    - type: from_text
+    answer_six:
+    - type: from_text
     answer_ten:
     - type: from_text
-    answer_eleven:
+    answer_three:
+    - type: from_text
+    answer_two:
     - type: from_text
 e2e_actions: []
